@@ -1,0 +1,22 @@
+{
+  "name": "fizbuzz",
+  "version": "0.1.5",
+  "description": "",
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "watchPathIgnorePatterns": [
+      "node_modules"
+    ]
+  }
+}
