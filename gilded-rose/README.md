@@ -1,10 +1,10 @@
-Kata goals
+Goals
 ======================================
 Add the new requirement, the item "Conjured" in a difficult to maintain code.
 
-Before to change the legacy code we need to create test to ensure we don't introduce any bug into production.
+Before changing the legacy code we need to add a tests harness to ensure we don't introduce any bugs.
 
-Luckily we know how to use it and the requirements.
+Luckily we have the original requirements.
 
 Gilded Rose Requirements Specification
 ======================================
