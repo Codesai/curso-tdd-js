@@ -1,9 +1,9 @@
-import * as shop from "./shop";
-import {Item} from "./item";
+import Shop from "./shop";
+import Item from "./item";
 
 test("canary test", () => {
-  let item = new Item("foo", 1, 3);
-  shop.initialize([item]);
+  const item = new Item("foo", 1, 3);
+  const shop = new Shop([item]);
 
   shop.updateQuality();
 
