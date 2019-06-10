@@ -1,5 +1,5 @@
-import Shop from "./shop";
-import Item from "./item";
+import Shop from "./Shop";
+import Item from "./Item";
 
 test("canary test", () => {
   const item = new Item("foo", 1, 3);
