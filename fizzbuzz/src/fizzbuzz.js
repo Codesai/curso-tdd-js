@@ -1,3 +1,3 @@
-export function dummyFunction() {
+export default () => {
   return true;
 }

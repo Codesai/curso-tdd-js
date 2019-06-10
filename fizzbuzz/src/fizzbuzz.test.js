@@ -1,5 +1,5 @@
-import * as fizzbuzz from "./fizzbuzz";
+import fizzbuzz from "./fizzbuzz";
 
 test("canary test", () => {
-  expect(fizzbuzz.dummyFunction()).toEqual(true);
+  expect(fizzbuzz()).toEqual(true);
 });
