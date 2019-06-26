@@ -8,7 +8,9 @@ Be able to test `Alarm`'s `check` function without changing the method signature
 2. Test the code using test doubles created with a library.
 
 ## Tools
-[Mocking with Jest](https://jestjs.io/docs/en/mock-functions)
+* [Jest](https://jestjs.io/en/)
+* [Expect - Jest](https://jestjs.io/docs/en/expect.html)
+* [Mock Functions - Jest](https://jestjs.io/docs/en/mock-functions)
 
 ### Example of spying an interaction
 ```javascript
@@ -44,7 +46,6 @@ class MyClass {
     return this.collaborator.collaborate();
   }
 }
-
 
 test('example of a stubbing an interaction', () => {
   const collaboratorResponse = "some response";
