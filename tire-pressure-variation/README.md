@@ -10,35 +10,51 @@ Be able to test `Alarm`'s `check` function without changing the method signature
 ## Tools
 [Mocking with Jest](https://jestjs.io/docs/en/mock-functions)
 
-### Example of mock
+### Example of spying an interaction
 ```javascript
-test('should_interact_with_the_spy', () => {
-  const collaborateSpy = jest.spyOn(collaborator, 'collaborate');
+class MyClass {
+  constructor(collaborator) {
+    this.collaborator = collaborator;
+  }
+
+  run() {
+    this.collaborator.collaborate();
+  }
+}
+
+test('example of a spying an interaction', () => {
+  const collaborator = {collaborate: jest.fn()};
   const myClass = new MyClass(collaborator);
 
   myClass.run();
 
-  expect(collaborateSpy).toHaveBeenCalled();
-
-  collaborateSpy.mockReset();
-  collaborateSpy.mockRestore();
+  expect(collaborator.collaborate).toHaveBeenCalledTimes(1);
 });
 ```
 
-### Example of stub
+### Example of stubbing an interaction
 
 ```javascript
-test('should_interact_with_the_spy', () => {
+class MyClass {
+  constructor(collaborator) {
+    this.collaborator = collaborator;
+  }
+
+  run() {
+    return this.collaborator.collaborate();
+  }
+}
+
+
+test('example of a stubbing an interaction', () => {
   const collaboratorResponse = "some response";
-  const collaborateStub = jest.spyOn(collaborator, 'collaborate').mockImplementation(() => {return collaboratorResponse;});
-  const myClass = new MyClass(collaborateStub);
+  const collaborator = {collaborate: jest.fn()};
+  collaborator.collaborate.mockReturnValueOnce(collaboratorResponse);
+  const myClass = new MyClass(collaborator);
 
   const result = myClass.run();
 
-  expect(result).toBe(collaborator);
-
-  collaborateStub.mockReset();
-  collaborateStub.mockRestore();
+  expect(result).toBe(collaboratorResponse);
 });
 ```
 
