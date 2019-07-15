@@ -2,10 +2,10 @@
 We want to ensure that our users' passwords have the following rules:
 
    - Have more than 8 characters
-   - Contains a capital letter
-   - Contains a lowercase
-   - Contains a number
-   - Contains an underscore
+   - Contains at least a capital letter
+   - Contains at least a lowercase
+   - Contains at least number
+   - Contains at least an underscore
 
 # Key
 This kata shows the importance of:
