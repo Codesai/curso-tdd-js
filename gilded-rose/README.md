@@ -36,5 +36,3 @@ We have recently signed a supplier of conjured items. This requires an update to
 Feel free to make any changes to the UpdateQuality method and add any new code as long as everything still works correctly. However, do not alter the Item class or Items property as those belong to the goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code ownership (you can make the UpdateQuality method and Items property static if you like, we'll cover for you).
 
 Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a legendary item and as such its Quality is 80 and it never alters.
-
-[Possible tests solution](https://gist.githubusercontent.com/trikitrok/ff63875a5d946384b6384a8ea26c1b06/raw/d78729ce353ff983403b3688dbc1335ff7a0f683/gilded_rose_tests.js)
