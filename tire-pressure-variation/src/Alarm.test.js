@@ -1,6 +1,9 @@
 import Alarm from "./Alarm";
 
-test("fixme", () => {
-  const alarm = new Alarm();
-  alarm.check();
+describe('Alarm', () => {
+  test("fixme", () => {
+    const alarm = new Alarm();
+    alarm.check();
+    expect(false).toEqual(true);
+  });
 });
