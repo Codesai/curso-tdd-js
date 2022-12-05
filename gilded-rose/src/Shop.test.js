@@ -1,11 +1,13 @@
 import Shop from "./Shop";
 import Item from "./Item";
 
-test("canary test", () => {
-  const item = new Item("foo", 1, 3);
-  const shop = new Shop([item]);
+describe('Gilded rose shop', () => {
+  test("canary test", () => {
+    const item = new Item("foo", 1, 3);
+    const shop = new Shop([item]);
 
-  shop.updateQuality();
+    shop.updateQuality();
 
-  expect(item.quality).toEqual(2);
+    expect(item.quality).toEqual(2);
+  });
 });
