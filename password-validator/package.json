@@ -5,10 +5,10 @@
   "keywords": [],
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "babel-jest": "^27.4.0",
-    "jest": "^27.4.0"
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.3.1",
+    "jest": "^29.3.1"
   },
   "scripts": {
     "test": "jest",
