@@ -1,5 +1,7 @@
 import passwordValidator from "./passwordValidator";
 
-test("canary test", () => {
-  expect(false).toEqual(true);
+describe('Password validator', () => {
+  test("canary test", () => {
+    expect(passwordValidator('foo')).toEqual(false);
+  });
 });
