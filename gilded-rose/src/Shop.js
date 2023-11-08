@@ -49,9 +49,5 @@ export default class Shop {
           }
         }
       }
-
-      return this.items;
   }
-
 }
-
