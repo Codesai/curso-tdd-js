@@ -29,7 +29,7 @@ export class Course {
     }
 
     #getCollege() {
-        return env.college;
+        return env.college ?? "not found";
     }
 }
 
